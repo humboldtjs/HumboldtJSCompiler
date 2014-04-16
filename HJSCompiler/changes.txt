@@ -1,0 +1,15 @@
+Added a build script to compile the resulting JAR file.
+
+Added Jar-in-jar-loader which provides some helper classes to load the classes for the JS compressor.
+
+Added an updated asjs.jar binary
+
+Added an optional preinit JS file which can be defined on the commandline, which will be prepended to the main application class file. This can be used to setup some javascript specific stuff before the main application is run.
+
+Separated the JS code for the language features into a languagefeatures.js which can be edited separately from the java code.
+
+Added Date to the native classes.
+
+Refactored all asjs language features into __asjs.* and added some non-clobbering code which now makes it possible to reuse the JS files more than once, and even instantiate multiple instances of an application.
+
+Fixed a bug in the parsing of the \ sign within strings.
