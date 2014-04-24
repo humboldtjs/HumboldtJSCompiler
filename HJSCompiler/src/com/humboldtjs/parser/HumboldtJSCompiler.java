@@ -251,7 +251,7 @@ public class HumboldtJSCompiler
 		if (!outDir.exists()) outDir.mkdirs();
 		
 		File outFile;
-		File mapFile = null;
+		//File mapFile = null;
 		boolean append = false;
 		
 		if (!HumboldtJS.isDebug) {

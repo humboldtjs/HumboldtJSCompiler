@@ -10,7 +10,6 @@
                 <attribute name="Class-Path" value="."/>
             </manifest>
             <fileset dir="bin">
-            	<exclude name="humboldtjs"/>
             	<exclude name="humboldtjs.sh"/>
             	<exclude name="*.jar"/>
             </fileset>
@@ -25,7 +24,6 @@
                 <attribute name="Class-Path" value="."/>
             </manifest>
             <fileset dir="bin">
-            	<exclude name="humboldtjs"/>
             	<exclude name="humboldtjs.sh"/>
             	<exclude name="*.jar"/>
             </fileset>
