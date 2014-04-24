@@ -7,8 +7,6 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.Writer;
 import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CharsetEncoder;
 
 import java.text.StringCharacterIterator;
 
@@ -16,7 +14,7 @@ import com.humboldtjs.parser.stringhelper.HumboldtJSString;
 
 public class XMLPConverter
 {
-	public static String VERSION = "0.9.5";
+	public static String VERSION = "0.9.8";
 	
 	public static int logLevel = 1;
 	public static String mainFile = "";

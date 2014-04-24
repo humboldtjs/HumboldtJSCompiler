@@ -7,14 +7,9 @@ import com.humboldtjs.parser.HumboldtJSCompiler;
 
 import com.yahoo.platform.yui.compressor.YUICompressor;
 
-import flex2.compiler.Logger;
-
 public class HumboldtJS
 {
 	public static String VERSION = "0.9.8";
-	
-	public static boolean isCompilerAPI = false;
-	public static Logger logger = null; 
 	
 	public static ArrayList<String> includePaths;
 	public static ArrayList<String> libraryPaths;
@@ -38,12 +33,7 @@ public class HumboldtJS
 		if (showHelp) {
 			System.out.println("\nUse 'humboldtjs -help' for information about the command line.");
 		}
-		if (!isCompilerAPI) {
-			System.exit(1);
-		} else {
-			logger.logError(message);
-			throw new Error(message);
-		}
+		System.exit(1);
 	}
 	public static void showError(String message)
 	{
@@ -62,10 +52,7 @@ public class HumboldtJS
 				System.out.print("[" + disp + "s]" + (timeDiff / 10 > 1 ? "!" : " ") + " ");
 				lastTime = newTime;
 			}
-			if (logger != null)
-				logger.logInfo(message);
-			else
-				System.out.println(message);
+			System.out.println(message);
 		} else {
 			if (logLevel > 3) {
 				lastTime = System.nanoTime();

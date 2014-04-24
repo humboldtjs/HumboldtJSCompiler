@@ -17,15 +17,15 @@ public class ASBlock
 {
 	public static int mUIDLength = 4;
 	
-	private static Integer mCurrentIndex = 0;
-	private static Integer mTotalLength = 0;
+//	private static Integer mCurrentIndex = 0;
+//	private static Integer mTotalLength = 0;
 	public static ArrayList<String> mLanguageObjects = null;
 	private ASBlock mRoot = null;
 	private ASBlock mClassNode;
 	private static HashMap<String, String> mUIDMap = new HashMap<String, String>();
 	
 	private ArrayList<Object> mSubNodes = null;
-	private ArrayList<Integer> mSubNodeIndex = null;
+//	private ArrayList<Integer> mSubNodeIndex = null;
 	private ArrayList<String> mGlobalStatics = null;
 	public ArrayList<String> imports = null;
 	public ArrayList<String> privates = null;
@@ -189,7 +189,7 @@ public class ASBlock
 		mIsClass = aIsClass;
 
 		mSubNodes = new ArrayList<Object>();
-		mSubNodeIndex = new ArrayList<Integer>();
+//		mSubNodeIndex = new ArrayList<Integer>();
 		
 //		parseMap(aCode);
 		parseBlocks(aCode);
@@ -424,7 +424,6 @@ public class ASBlock
 			}						
 		}
 
-		boolean hasConstructor = false;
 		int theIgnoreCount = 0;
 		for (int i = 0; i < mSubNodes.size(); i++) {
 			Object theObject = mSubNodes.get(i);

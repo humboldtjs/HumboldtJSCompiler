@@ -10,7 +10,6 @@
                 <attribute name="Class-Path" value="."/>
             </manifest>
             <fileset dir="bin">
-            	<exclude name="humboldtjs"/>
             	<exclude name="humboldtjs.sh"/>
             	<exclude name="*.jar"/>
             </fileset>
@@ -25,22 +24,6 @@
                 <attribute name="Class-Path" value="."/>
             </manifest>
             <fileset dir="bin">
-            	<exclude name="humboldtjs"/>
-            	<exclude name="humboldtjs.sh"/>
-            	<exclude name="*.jar"/>
-            </fileset>
-        </jar>
-    </target>
-    <target name="create_mxmlc_jar">
-    	<delete file="bin/mxmlc.jar" />
-        <jar destfile="bin/mxmlc.jar">
-            <manifest>
-                <attribute name="Main-Class" value="flex2.tools.Mxmlc"/>
-                <attribute name="Class-Path" value="asc.jar xmlParserAPIs.jar afe.jar aglj40.jar rideau.jar batik-all-flex.jar velocity-dep-1.4-flex.jar commons-collections.jar commons-discovery.jar commons-logging.jar license.jar swfutils.jar fxgutils.jar flex-fontkit.jar flex-messaging-common.jar mxmlc_da.jar mxmlc_de.jar mxmlc_es.jar mxmlc_fi.jar mxmlc_fr.jar mxmlc_it.jar mxmlc_ja.jar mxmlc_ko.jar mxmlc_nb.jar mxmlc_nl.jar mxmlc_pt.jar mxmlc_ru.jar mxmlc_sv.jar mxmlc_zh_CN.jar mxmlc_zh_TW.jar xalan.jar"/>
-            </manifest>
-            <zipfileset excludes="META-INF/*.SF" src="libs/mxmlc.jar"/>
-            <fileset dir="bin">
-            	<exclude name="humboldtjs"/>
             	<exclude name="humboldtjs.sh"/>
             	<exclude name="*.jar"/>
             </fileset>
