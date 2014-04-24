@@ -16,7 +16,7 @@ import com.humboldtjs.parser.stringhelper.HumboldtJSString;
 
 public class XMLPConverter
 {
-	public static String VERSION = "0.9.5";
+	public static String VERSION = "0.9.8";
 	
 	public static int logLevel = 1;
 	public static String mainFile = "";
