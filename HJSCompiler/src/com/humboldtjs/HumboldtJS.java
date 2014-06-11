@@ -9,7 +9,7 @@ import com.yahoo.platform.yui.compressor.YUICompressor;
 
 public class HumboldtJS
 {
-	public static String VERSION = "0.9.8";
+	public static String VERSION = "0.9.9";
 	
 	public static ArrayList<String> includePaths;
 	public static ArrayList<String> libraryPaths;

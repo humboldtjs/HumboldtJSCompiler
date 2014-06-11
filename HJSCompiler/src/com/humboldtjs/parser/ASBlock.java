@@ -663,6 +663,7 @@ public class ASBlock
 								}
 
 								replaceClassPackages(theType);
+								theValue = replaceClassPackages(theValue);
 
 								if (!theValue.equals("") && theASBlock != null && !theValue.trim().equals("null;") && !theValue.trim().equals("null")) {
 									theASBlock.mSubNodes.add(0, theVar + " = (typeof(" + theVar + ") != \"undefined\") ? " + theVar + " :  " + theValue + ";");
